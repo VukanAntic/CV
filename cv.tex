@@ -1,0 +1,173 @@
+\documentclass[11pt,a4paper,roman]{moderncv}
+
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\nopagenumbers{}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage[,unicode]{hyperref}
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{multicol}
+
+
+\name{Vukan}{Antić}
+\address{Belgrade, Serbia}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+\begin{document}
+\vspace*{-21mm}
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+ \faLinkedin\enspace \href{https://www.linkedin.com/in/vukan-antic/}{LinkedIn} & \faGithub\enspace \href{https://github.com/VukanAntic}{GitHub} & \faEnvelopeO\enspace vukanantic7@gmail.com &  \faMobile\enspace (+381)652674914 \\  
+\end{tabular}
+\end{center}
+
+\section{Education}
+
+{\customcventry{Nov 2022 -- Present}{Masters degree in Computer Science}{Faculty of Mathematics}{University of Belgrade, Serbia}{}{}}
+
+{\customcventry{Oct 2018 -- Sept 2022}{Bachelor of Computer Science (GPA 9.0/10.0)}{Faculty of Mathematics}{University of Belgrade, Serbia}{}
+{
+    \item Scholarship for the exceptionally gifted students \hfill 2020 -- 2022
+}
+}
+
+
+
+\section{Experience}
+{\customcventry{Dec 2022 -- Present}{Junior JavaScript Developer}{Levi9}{Belgrade, Serbia}{}
+{\begin{itemize}
+    \item Part of the Levi9 Masterclass, an in depth course on JS, Node, React and Angular
+\end{itemize}
+}
+}
+
+{\customcventry{Oct 2022 -- Present}{Teaching associate, Department for Informatics and Computer Science}{Faculty of Mathematics, University Of Belgrade}{Belgrade, Serbia}{}
+{\begin{itemize}
+  \item Courses: Object-Oriented Programming and Computer Networks (Java)
+\end{itemize}
+}
+}
+
+\section{Projects}
+
+% TOPOLOGIJA
+
+{\customcventry{Apr 2022 - Jun 2022}{\url{https://github.com/VukanAntic/ph_in_evolutionary_games}}{PH in evolutionary games (Python)}{}{}
+{\begin{itemize}
+  \item Analyzing the persistent homology in the evolutionary game "The prisoners dilemma", as well as the interactions between different strategies. Team project. Pair programming
+\end{itemize}
+}
+}
+
+% MLOFI
+
+{\customcventry{Nov 2021 - Jan 2022}{\url{https://github.com/VukanAntic/MLofi}}{MLofi (Python, Tensorflow)}{}{}
+{\begin{itemize}
+  \item Generates music using neural networks (using different models, lstm, cnn, ..). Team project
+\end{itemize}
+}
+}
+
+% ANYMATION
+
+{\customcventry{Nov 2021 - Jan 2022}{\url{https://gitlab.com/matfpveb/projekti/2021-2022/01-Anymation}}{Web Application "Anymation" (JS, Node, Angular)}{}{}
+{\begin{itemize}
+  \item Website where users can grade animated movies and series (inspired by IMDb). Team project. Worked on the backend, as well as the frontend of the app
+\end{itemize}
+}
+}
+
+% Converter
+
+{\customcventry{Apr 2021 - May 2021}{\url{https://github.com/matf-pp/2021_YoutubeToDeezerConverter}}{YouTube To Deezer Converter (Kotlin)}{}{}
+{\begin{itemize}
+  \item Android application which takes the users Deezer playlists, and duplicates them onto YouTube. Team project. Worked on getting the data from Deezer, and sending it via YouTube API
+\end{itemize}
+}
+}
+
+\smallskip 
+\noindent
+\begin{minipage}[t]{0.48\linewidth}
+\section{Skills \& Interests}
+
+\begin{itemize}
+          \item \textbf{Programming languages} : Python, Java, JavaScript, Kotlin, C++, SQL
+          \item \textbf{Frameworks used} : Tensorflow, Angular, \newline React, Qt5
+          \item \textbf{Editors and IDEs} : Jupyter Notebook, \newline JetBrains toolset, Qt Creator, Visual Studio, \newline Android Studio
+          \item \textbf{Interests} : Machine learning, Computer vision
+		\end{itemize}}%
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\section{Miscellaneous}
+	\small{
+        \begin{itemize}
+          \item Holder of the Levi9 scholarship for the 2021/22 school year
+          \item Volunteered as a Student-Mentor, aiding freshmen navigate University life
+          \item Participated in the AIBG (Artificial Intelligence \newline Battleground) Hackaton
+	\end{itemize}}%
+\end{minipage}
+
+\smallskip 
+
+
+\section{Languages}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+        \begin{itemize}
+          \item \textbf{English} : Proficient (\texttt{CPE diploma})
+          \item \textbf{Serbian} : Native speaker
+	\end{itemize}}%
+\end{minipage}%
+
+
+\end{document}
